@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twice survey form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Anime survey form</h1>
+    <p id="description">Please fill the form, thank you!</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            name
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </label>
+        <label for="name" id="email-label">
+            email
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </label>
+        <label for="number" id="number-label">
+            Age
+            <input type="number" id="number" placeholder="How old are you" min="15" max="40">
+        </label>
+        <label for="dropdown" id="dropdown-label">
+            How do you know Anime?
+            <select id="dropdown">
+                <option value="">Friend</option>
+                <option value="">Family</option>
+                <option value="">Internet</option>
+            </select>
+        </label>
+        <label for="anime" id="anime-label">
+            What is your favorit Anime?
+        </label>
+        <input type="radio" name="anime" value="1" checked/> Naruto <br/>
+        <input type="radio" name="anime" value="2"/> Sword art online <br/>
+        <input type="radio" name="anime" value="3"/> Gintama <br/>
+        <input type="radio" name="anime" value="4"/> One piece <br/>
+        <input type="radio" name="anime" value="5"/> Bleach <br/>
+        <input type="radio" name="anime" value="6"/> One Punch Man <br/>
+        <input type="radio" name="anime" value="7"/> Detective Conan <br/>
+        <input type="radio" name="anime" value="8"/> Mob Psycho 100 <br/>
+        <input type="radio" name="anime" value="9"/> Jujutsu Kaisen <br/>
+        <br/><br/><br/>
+        <label for="genre" id="genre-label">
+            Which are your favorit Genre(s)?
+        </label>
+        <input type="checkbox" name="romance" /> Romance <br/>
+        <input type="checkbox" name="slice-of-life" /> Slice of life <br/>
+        <input type="checkbox" name="comedy" /> Comedy <br/>
+        <input type="checkbox" name="mistery" /> Mistery <br/>
+        <input type="checkbox" name="action" /> Action <br/>
+        <br/><br/> 
+        <label for="comments" id="comments-label" >
+            Any comments or suggestion?
+          <textarea name="" id="" cols="30" rows="10" placeholder="Please comment here"></textarea>
+        </label>
+        <button id="submit" type="submit">submit</button>
+    </form>
+</body>
+</html>
